@@ -1,0 +1,22 @@
+{
+  "name": "crud-mongo",
+  "version": "1.0.0",
+  "description": "Es un proyecto de CRUD en mongo desarrollado por los estudiantes de IV ciclo UIDE LOJA",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProgamacionWebUIDEL/CRUD_MONGO.git"
+  },
+  "author": "mariah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProgamacionWebUIDEL/CRUD_MONGO/issues"
+  },
+  "homepage": "https://github.com/ProgamacionWebUIDEL/CRUD_MONGO#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
