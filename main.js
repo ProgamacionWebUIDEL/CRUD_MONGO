@@ -1,5 +1,9 @@
 const express=require("express");
 const app=express();
+const index_pelicula= require("./router/rutas_pelicula");
+const connection=require("./config/conexion")
+//ruteo de APIS
+app.use('/',index_pelicula);
 
 app.get("/hola",(req,res)=>{
   var datos=req.query
@@ -36,4 +40,5 @@ app.get("/hola",(req,res)=>{
 app.listen(3000,()=>{
   console.log("servidor INICIADO")
 });
+
 //multiplicacion,division,calcular edad ser creativo
