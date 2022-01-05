@@ -1,7 +1,11 @@
 const express=require("express");
 const app=express();
 const index_pelicula= require("./router/rutas_pelicula");
-const connection=require("./config/conexion")
+const connection=require("./config/conexion");
+const bodyParser = require("body-parser");
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 //ruteo de APIS
 app.use('/',index_pelicula);
 
@@ -40,5 +44,3 @@ app.get("/hola",(req,res)=>{
 app.listen(3000,()=>{
   console.log("servidor INICIADO")
 });
-
-//multiplicacion,division,calcular edad ser creativo
