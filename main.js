@@ -1,6 +1,7 @@
 const express=require("express");
 const app=express();
 const index_pelicula= require("./router/rutas_pelicula");
+const index_serie= require("./router/rutas_serie");
 const connection=require("./config/conexion");
 const bodyParser = require("body-parser");
 
@@ -8,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 //ruteo de APIS
 app.use('/',index_pelicula);
-
+app.use('/',index_serie);
 app.get("/hola",(req,res)=>{
   var datos=req.query
   res.json({mensaje:"-----hola Mundi-----"+datos.nombre});
